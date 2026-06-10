@@ -1,6 +1,6 @@
 AutoProxy will automatically enable your Windows proxy (turn ON) and disable (turn OFF) when connected to your normal connection.
 
-How to use: <b>
+How to use: <b><br>
 This is a POWER SHELL script.
 1. Open Powershell
 2. Run the script ./AutoProxy.ps1
