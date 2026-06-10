@@ -1,5 +1,22 @@
 AutoProxy will automatically enable your Windows proxy (turn ON) and disable (turn OFF) when connected to your normal connection.
 
+How to use:
+This is a POWER SHELL script.
+1. Open Powershell
+2. Run the script ./AutoProxy.ps1
+
+NOTE: 
+Some systems have executing scripts turned off, you will need to either:
+1. Override the security setting to run (this script, this time only)
+powershell.exe -ExecutionPolicy Bypass -File "C:\path\to\AutoProxy.ps1"
+
+In scheduler:
+WindowStyle Hidden -ExecutionPolicy Bypass -File "C:\Scripts\AutoProxy.ps1"
+
+2. Allow Powershell script execution
+Open Powershell as Administrator
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+
 User editable changes:
 $TargetSSID   = "SSID_NAME"
 Change SSID_NAME to the name of your hotspot SSID (the name that shows up in Wireless Connections)
